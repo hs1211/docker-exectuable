@@ -15,6 +15,9 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%';
 Query OK, 0 rows affected (0.00 sec)
 
+mysql> ALTER USER 'admin'@'%' IDENTIFIED WITH mysql_native_password BY '1111';
+Query OK, 0 rows affected (0.00 sec)
+
 mysql> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0.00 sec)
 ```
